@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Product.scss";
-import prod from "../../../assets/earbuds1.webp"
+import prod from "../../../assets/earbuds2.webp"
 function Product() {
   return (
    <div className='product-card'>

@@ -2,11 +2,12 @@ import React from 'react'
 import "./Products.scss"
 import Product from './Product/Product'
 //importing here product dont feel discomfort
-function Products() {
+function Products({innerPage}) {
+  //This prop used in category section only
   return (
     <div>
       <div className="products-container">
-        <div className='sec-heading'>Section Heading</div>
+        {!innerPage &&<div className='sec-heading'>Section Heading</div>} {/*//this could be change dynamically */}
         <div className='products'>
 
           <Product/>

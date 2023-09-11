@@ -1,11 +1,18 @@
 import React, { useState } from 'react'
 
+import Products from "../Products/Products"
+import "./Category.scss"
 function Category() {
-    const [id,setId]=useState(0)
+    
  
   return (
-    <div>
-      {`category ${id}`}
+    <div className='category-main-content'>
+      <div className='layout'>
+        <div className='category-title'>
+         Category Title
+        </div>
+        <Products innerPage={true}/>
+      </div>
     </div>
   )
 }
